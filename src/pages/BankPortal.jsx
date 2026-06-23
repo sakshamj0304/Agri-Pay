@@ -187,38 +187,41 @@ console.log(response.data.status);
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px', textAlign: 'left' }}>
             
-            <div style={{ background: '#112240', padding: '40px', borderRadius: '16px', border: '1px solid #233554' }}>
+            <Link to="/contact" style={{ background: '#112240', padding: '40px', borderRadius: '16px', border: '1px solid #233554', textDecoration: 'none', display: 'flex', flexDirection: 'column', transition: 'transform 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
               <h4 style={{ color: '#8892b0', fontSize: '20px', marginBottom: '10px' }}>Silver Partner</h4>
               <p style={{ color: '#8892b0', fontSize: '14px', marginBottom: '30px', minHeight: '40px' }}>Perfect for NBFCs starting rural expansion.</p>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e6f1ff', fontSize: '14px' }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e6f1ff', fontSize: '14px', flex: 1 }}>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #233554' }}>100+ Verified Leads/Month</li>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #233554' }}>Basic AgriScore Access</li>
                 <li style={{ padding: '10px 0' }}>Standard Support</li>
               </ul>
-            </div>
+              <div style={{ marginTop: '30px', textAlign: 'center', padding: '10px', border: '1px solid #8892b0', color: '#8892b0', borderRadius: '8px', fontWeight: 'bold' }}>Choose Silver</div>
+            </Link>
 
-            <div style={{ background: '#0a192f', padding: '40px', borderRadius: '16px', border: '2px solid #64ffda', position: 'relative', transform: 'translateY(-10px)', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }}>
+            <Link to="/contact" style={{ background: '#0a192f', padding: '40px', borderRadius: '16px', border: '2px solid #64ffda', position: 'relative', transform: 'translateY(-10px)', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', textDecoration: 'none', display: 'flex', flexDirection: 'column' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-15px)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}>
               <div style={{ position: 'absolute', top: '-15px', left: '50%', transform: 'translateX(-50%)', background: '#64ffda', color: '#0a192f', padding: '5px 15px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold' }}>RECOMMENDED</div>
               <h4 style={{ color: '#64ffda', fontSize: '24px', marginBottom: '10px' }}>Gold Partner</h4>
               <p style={{ color: '#8892b0', fontSize: '14px', marginBottom: '30px', minHeight: '40px' }}>For mid-sized Banks scaling their PSL portfolio.</p>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e6f1ff', fontSize: '14px' }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e6f1ff', fontSize: '14px', flex: 1 }}>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #233554' }}>Unlimited Verified Leads</li>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #233554' }}>Advanced AI Risk Modeling</li>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #233554' }}>Co-branding on App</li>
                 <li style={{ padding: '10px 0' }}>Dedicated Account Manager</li>
               </ul>
-            </div>
+              <div style={{ marginTop: '30px', textAlign: 'center', padding: '10px', background: '#64ffda', color: '#0a192f', borderRadius: '8px', fontWeight: 'bold' }}>Choose Gold</div>
+            </Link>
 
-            <div style={{ background: '#112240', padding: '40px', borderRadius: '16px', border: '1px solid #233554' }}>
+            <Link to="/contact" style={{ background: '#112240', padding: '40px', borderRadius: '16px', border: '1px solid #233554', textDecoration: 'none', display: 'flex', flexDirection: 'column', transition: 'transform 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
               <h4 style={{ color: '#e6f1ff', fontSize: '20px', marginBottom: '10px' }}>Platinum Partner</h4>
               <p style={{ color: '#8892b0', fontSize: '14px', marginBottom: '30px', minHeight: '40px' }}>For Top Tier Banks with national rural footprint.</p>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e6f1ff', fontSize: '14px' }}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e6f1ff', fontSize: '14px', flex: 1 }}>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #233554' }}>Exclusive Lead Access</li>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #233554' }}>Custom API & CBS Integration</li>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #233554' }}>First Right of Refusal</li>
                 <li style={{ padding: '10px 0' }}>24/7 Priority Tech Support</li>
               </ul>
-            </div>
+              <div style={{ marginTop: '30px', textAlign: 'center', padding: '10px', border: '1px solid #e6f1ff', color: '#e6f1ff', borderRadius: '8px', fontWeight: 'bold' }}>Choose Platinum</div>
+            </Link>
 
           </div>
         </div>
