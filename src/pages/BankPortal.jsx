@@ -50,6 +50,23 @@ export default function BankPortal() {
 
         </div>
 
+        {/* Loan Providing Options Section */}
+        <div style={{ marginTop: '60px', padding: '40px', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(100, 255, 218, 0.1)' }}>
+          <h3 style={{ fontSize: '28px', marginBottom: '10px', color: '#e6f1ff', textAlign: 'center' }}>Loan Providing Options</h3>
+          <p style={{ color: '#8892b0', textAlign: 'center', marginBottom: '40px', fontSize: '16px' }}>Offer a variety of agricultural credit products directly through AgriPay's verified farmer network.</p>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+            <div style={{ padding: '25px', background: '#0a192f', borderRadius: '12px', borderLeft: '4px solid #64ffda' }}>
+              <h4 style={{ color: '#e6f1ff', fontSize: '18px', marginBottom: '10px' }}>Short-Term Crop Loans (Input Credit)</h4>
+              <p style={{ color: '#8892b0', margin: 0, fontSize: '14px', lineHeight: 1.5 }}>Provide 3-6 month credit lines specifically for seeds, fertilizers, and pesticides. Repayment is aligned with the crop harvest cycle.</p>
+            </div>
+            <div style={{ padding: '25px', background: '#0a192f', borderRadius: '12px', borderLeft: '4px solid #64ffda' }}>
+              <h4 style={{ color: '#e6f1ff', fontSize: '18px', marginBottom: '10px' }}>Post-Harvest Storage Financing</h4>
+              <p style={{ color: '#8892b0', margin: 0, fontSize: '14px', lineHeight: 1.5 }}>Finance farmers against their warehouse receipts so they don't have to distress-sell their harvest at low prices.</p>
+            </div>
+          </div>
+        </div>
+
         <div style={{ background: 'linear-gradient(90deg, rgba(100, 255, 218, 0.1) 0%, rgba(10, 25, 47, 0) 100%)', borderRadius: '16px', padding: '40px', marginTop: '60px', borderLeft: '4px solid #64ffda' }}>
           <h3 style={{ fontSize: '24px', marginBottom: '20px', color: '#e6f1ff' }}>Co-Lending Opportunities</h3>
           <p style={{ color: '#8892b0', lineHeight: 1.6, marginBottom: '30px', maxWidth: '800px' }}>
