@@ -1,0 +1,18 @@
+import { Link } from 'react-router-dom'
+import { Icon } from '../components/Icons'
+import SectionHeader from '../components/SectionHeader'
+
+const flows = [
+  {num:'01',title:'Merchant App',tag:'THE TRUSTED COUNTER, UPGRADED',copy:'Everything a rural merchant needs to manage purchase-linked credit — in one clear, mobile-first workspace.',icon:'store',features:['Fast customer onboarding','Digital billing and checkout','Credit request initiation','Repayment tracking','Customer history and management']},
+  {num:'02',title:'Farmer Experience',tag:'CLEAR AT EVERY STEP',copy:'A low-friction, consent-led journey that keeps the farmer informed from purchase confirmation through repayment.',icon:'phone',features:['Secure OTP verification','Purchase confirmation','Simple credit overview','Due-date reminders','UPI-enabled repayment']},
+  {num:'03',title:'Admin Dashboard',tag:'CONTROL WITHOUT COMPLEXITY',copy:'The operating layer for monitoring the network, understanding performance and identifying risk early.',icon:'chart',features:['Merchant lifecycle management','Transaction monitoring','Portfolio analytics','Risk signals and alerts','Configurable reporting']}
+]
+export default function Product() {
+  return <>
+    <section className="page-hero product-hero"><div className="container"><span className="eyebrow">THE AGRIPAY PLATFORM</span><h1>One connected flow.<br/><em>Three simple experiences.</em></h1><p>Purpose-built tools for the merchant, the farmer and the teams enabling every transaction.</p></div></section>
+    <section className="product-flow"><div className="container flow-overview">{[['store','Merchant'],['phone','Farmer'],['shield','AgriPay'],['rupee','Finance']].map((x,i)=><div key={x[1]}><span><Icon name={x[0]}/></span><strong>{x[1]}</strong>{i<3&&<b>→</b>}</div>)}</div></section>
+    <section className="section product-details"><div className="container">{flows.map((f,i)=><article className={`detail-row ${i%2?'reverse':''}`} key={f.title}><div className={`app-mockup mock-${i}`}><div className="phone-top"><span></span><b>AgriPay</b><i></i></div><div className="mock-welcome">{i===0?'Good morning, Rajesh':i===1?'Your purchase':'Portfolio overview'}<strong>{i===0?'₹48,250':i===1?'₹12,400':'₹24.8L'}</strong><small>{i===0?'This month’s sales':i===1?'Purchase total':'Active credit'}</small></div><div className="mock-chart"><i></i><i></i><i></i><i></i><i></i></div><div className="mock-list"><span></span><span></span><span></span></div><div className="mock-action">{i===0?'+ New checkout':i===1?'Confirm purchase':'View portfolio'}</div></div><div className="detail-copy"><span className="detail-num">{f.num}</span><span className="eyebrow">{f.tag}</span><h2>{f.title}</h2><p>{f.copy}</p><ul>{f.features.map(x=><li key={x}><Icon name="check" size={17}/>{x}</li>)}</ul></div></article>)}</div></section>
+    <section className="section safety-section"><div className="container safety-grid"><div><span className="eyebrow lime">TRUST BY DESIGN</span><h2>Simple on the surface.<br/>Serious underneath.</h2><p>Every AgriPay interaction is designed around clear farmer consent, secure data and complete transaction visibility.</p></div><div className="safety-cards">{[['lock','Secure by default'],['shield','Consent-led flow'],['receipt','Complete audit trail'],['chart','Real-time monitoring']].map(x=><div key={x[1]}><Icon name={x[0]}/><strong>{x[1]}</strong></div>)}</div></div></section>
+    <section className="cta-band light-cta"><div className="container"><div><span className="eyebrow">SEE IT IN ACTION</span><h2>A better checkout starts here.</h2></div><Link className="button" to="/contact">Request a demo <Icon name="arrow" size={18}/></Link></div></section>
+  </>
+}
