@@ -75,6 +75,7 @@ export default function Navbar() {
             </div>
 
             <NavLink to="/merchant" onClick={() => setOpen(false)} className={({isActive}) => isActive ? 'active' : ''}>For Merchants</NavLink>
+            <NavLink to="/bank-portal" onClick={() => setOpen(false)} className={({isActive}) => isActive ? 'active' : ''} style={{ color: '#2dd4bf', fontWeight: 'bold' }}>For Banks & NBFCs</NavLink>
             <NavLink to="/contact" onClick={() => setOpen(false)} className={({isActive}) => isActive ? 'active' : ''}>Contact</NavLink>
             <NavLink to="/feedback" onClick={() => setOpen(false)} className={({isActive}) => isActive ? 'active' : ''}>Feedback</NavLink>
 

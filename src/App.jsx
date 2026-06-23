@@ -28,6 +28,7 @@ import Products from './pages/Products'
 import ApplyLoan from './pages/ApplyLoan'
 import MerchantDashboard from './pages/MerchantDashboard'
 import Feedback from './pages/Feedback'
+import BankPortal from './pages/BankPortal'
 import Chatbot from './components/Chatbot'
 
 function ScrollToTop() {
@@ -75,7 +76,8 @@ export default function App() {
       {/* Admin Routes */}
       <Route path="/admin" element={<ProtectedRoute><AdminPanel /></ProtectedRoute>} />
       <Route path="/admin/login" element={<AdminLogin />} />
-      <Route path="/admin/register" element={<AdminRegister />} />
+      <Route path="/admin-register" element={<AdminRegister />} />
+      <Route path="/bank-portal" element={<BankPortal />} />
       
       <Route path="*" element={<Home />} />
     </Routes></main>
