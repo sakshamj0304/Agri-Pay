@@ -14,8 +14,8 @@ app.use(express.json());
 app.use(cors());
 
 // Use environment variables instead of hardcoded secrets
-const MONGO_URI = process.env.MONGO_URI;
-const JWT_SECRET = process.env.JWT_SECRET;
+const MONGO_URI = process.env.MONGO_URI || process.env.MONGODB_URI;
+const JWT_SECRET = process.env.JWT_SECRET || 'fallback_secret_for_local_dev';
 
 // Routes
 app.use('/api/auth', authRoutes);
